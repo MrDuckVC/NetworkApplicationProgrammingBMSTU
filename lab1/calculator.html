@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,72 +10,59 @@
 </head>
 
 <body>
-    <main class="calculator-app">
+    <header>
+        <div class="topnav">
+            <a href="./home.html"><img src="./img/spacex-logo.svg" /></a>
+            <a href="./work_purpose.html">Цель работы</a>
+            <a class="active" href="./calculator.html">Калькулятор</a>
+            <a href="./about_author.html">Об авторе</a>
+            <div class="theme-select">
+                <label for="select_theme">Выбор темы: </label>
+                <select id="select_theme" class="select-theme">
+                    <option value="light">Светлая</option>
+                    <option value="dark">Темная</option>
+                </select>
+            </div>
+        </div>
+    </header>
 
-        <p class="lab-target">
-            <strong>Цель</strong> данной лабораторной работы - знакомство с инструментами построения пользовательских
-            интерфейсов web-сайтов: <mark>HTML</mark>, <mark>CSS</mark>. В ходе выполнения работы, вам предстоит ознакомиться
-            с кодом реализации простого калькулятора, и затем выполнить задания по варианту.
-        </p>
+    <section>
+        <article>
+            <h1>Калькулятор</h1>
+            <div class="calc-grid">
+                <output id="result" class="result">0</output>
 
-        <output id="result" class="result">0</output>
-
-        <div>
-            <div>
                 <button id="btn_op_clear" class="calc-btn secondary">C</button>
                 <button id="btn_op_sign" class="calc-btn secondary">±</button>
                 <button id="btn_op_percent" class="calc-btn secondary">%</button>
                 <button id="btn_op_div" class="calc-btn primary">/</button>
-            </div>
 
-            <div>
                 <button id="btn_digit_7" class="calc-btn">7</button>
                 <button id="btn_digit_8" class="calc-btn">8</button>
                 <button id="btn_digit_9" class="calc-btn">9</button>
                 <button id="btn_op_mult" class="calc-btn primary">x</button>
-            </div>
 
-            <div>
                 <button id="btn_digit_4" class="calc-btn">4</button>
                 <button id="btn_digit_5" class="calc-btn">5</button>
                 <button id="btn_digit_6" class="calc-btn">6</button>
                 <button id="btn_op_minus" class="calc-btn primary">-</button>
-            </div>
 
-            <div>
                 <button id="btn_digit_1" class="calc-btn">1</button>
                 <button id="btn_digit_2" class="calc-btn">2</button>
                 <button id="btn_digit_3" class="calc-btn">3</button>
                 <button id="btn_op_plus" class="calc-btn primary">+</button>
-            </div>
 
-            <div>
                 <button id="btn_digit_0" class="calc-btn">0</button>
                 <button id="btn_digit_dot" class="calc-btn">.</button>
                 <button id="btn_op_equal" class="calc-btn primary execute">=</button>
             </div>
-        </div>
+            <button id="btn_change_theme" class="change-theme-btn">Смена темы</button>
+        </article>
+    </section>
 
-        <button id="btn_change_theme" class="change-theme-btn">Смена темы</button>
-
-        <div class="theme-select">
-            <label for="select_theme">Выбор темы: </label>
-            <select id="select_theme" class="select-theme">
-                <option value="light">Светлая</option>
-                <option value="dark">Темная</option>
-            </select>
-        </div>
-    </main>
-
-    <footer class="annotation">
-        <p>ЛР выполнена Куневым Валентином</p>
-        <details class="author-details">
-            <summary>Автор</summary>
-            <p>ФИО: Кунев Валентин</p>
-            <p>Группа: ИУ5-42Б</p>
-        </details>
-        <a class="github-link" href="https://github.com/MrDuckVC/">GitHub <img class="github-ico"
-                src="img/github-ico.svg"></a>
+    <footer>
+        <p>ЛР выполнена Куневым Валентином <a class="github-link" href="https://github.com/MrDuckVC/">GitHub <img class="github-ico" src="img/github-ico.svg"></a></p>
     </footer>
 </body>
+
 </html>
