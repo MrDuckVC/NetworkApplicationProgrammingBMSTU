@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-theme="dark">
+    <header>
+        <div class="topnav">
+            <a href="./home.html"><img src="./img/spacex-logo.svg" /></a>
+            <a href="./work_purpose.html">Цель работы</a>
+            <a class="active" href="./calculator.html">Калькулятор</a>
+            <a href="./about_author.html">Об авторе</a>
+            <div class="theme-select">
+                <label for="select_theme">Выбор темы: </label>
+                <select id="select_theme" class="select-theme">
+                    <option value="dark">Темная</option>
+                    <option value="light">Светлая</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <article>
+            <h1>Калькулятор</h1>
+            <div class="calc-grid">
+                <output id="result" class="result">0</output>
+
+                <button id="btn_op_all_clear" class="calc-btn secondary">AC</button>
+                <button id="btn_op_clear_entry" class="calc-btn secondary">CE</button>
+                <button id="btn_mem_plus" class="calc-btn secondary">M+</button>
+                <button id="btn_mem_minus" class="calc-btn secondary">M-</button>
+                <button id="btn_mem_clear" class="calc-btn secondary">MC</button>
+                <button id="btn_mem_recall" class="calc-btn secondary">MR</button>
+
+                <button id="btn_digit_7" class="calc-btn">7</button>
+                <button id="btn_digit_8" class="calc-btn">8</button>
+                <button id="btn_digit_9" class="calc-btn">9</button>
+                <button id="btn_op_mult" class="calc-btn primary">x</button>
+                <button id="btn_op_sqrt" class="calc-btn primary">√</button>
+                <button id="btn_op_sign" class="calc-btn primary">±</button>
+
+                <button id="btn_digit_4" class="calc-btn">4</button>
+                <button id="btn_digit_5" class="calc-btn">5</button>
+                <button id="btn_digit_6" class="calc-btn">6</button>
+                <button id="btn_op_minus" class="calc-btn primary">-</button>
+                <button id="btn_op_x2" class="calc-btn primary">x²</button>
+                <button id="btn_op_percent" class="calc-btn primary">%</button>
+
+                <button id="btn_digit_1" class="calc-btn">1</button>
+                <button id="btn_digit_2" class="calc-btn">2</button>
+                <button id="btn_digit_3" class="calc-btn">3</button>
+                <button id="btn_op_plus" class="calc-btn primary">+</button>
+                <button id="btn_op_factorial" class="calc-btn primary">x!</button>
+                <button id="btn_op_div" class="calc-btn primary">/</button>
+
+                <button id="btn_digit_000" class="calc-btn">000</button>
+                <button id="btn_digit_0" class="calc-btn">0</button>
+                <button id="btn_digit_dot" class="calc-btn">.</button>
+                <button id="btn_op_equal" class="calc-btn primary">=</button>
+                <button id="btn_op_d2s" class="calc-btn primary double-width">D2S</button>
+
+                <div id="error" class="error">Ошибка: Недопустимая операция</div>
+            </div>
+            <div id="error" class="error">Error</div>
+
+            <button id="btn_change_theme" class="change-theme-btn">Смена темы</button>
+        </article>
+    </section>
+
+    <footer>
+        <p>ЛР выполнена Куневым Валентином <a class="github-link" href="https://github.com/MrDuckVC/">GitHub <img
+                    class="github-ico" src="img/github-ico.svg"></a></p>
+    </footer>
+
+    <script src="js/calculator.js"></script>
+    <script src="js/change_theme.js"></script>
+</body>
+
+</html>

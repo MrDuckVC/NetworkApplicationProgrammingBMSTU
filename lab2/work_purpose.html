@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-theme="dark">
+    <header>
+        <div class="topnav">
+            <a href="./home.html"><img src="./img/spacex-logo.svg" /></a>
+            <a class="active" href="./work_purpose.html">Цель работы</a>
+            <a href="./calculator.html">Калькулятор</a>
+            <a href="./about_author.html">Об авторе</a>
+            <div class="theme-select">
+                <label for="select_theme">Выбор темы: </label>
+                <select id="select_theme" class="select-theme">
+                    <option value="dark">Темная</option>
+                    <option value="light">Светлая</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <article>
+            <h1>Цель работы</h1>
+            <p><strong>Цель</strong> данной лабораторной работы - знакомство с инструментами построения
+            пользовательских интерфейсов web-сайтов: <mark>HTML</mark>, <mark>CSS</mark>. В ходе выполнения работы, вам
+            предстоит ознакомиться с кодом реализации простого калькулятора, и затем выполнить задания по варианту.</p>
+            <button id="btn_change_theme" class="change-theme-btn">Смена темы</button>
+        </article>
+    </section>
+
+    <footer>
+        <p>ЛР выполнена Куневым Валентином <a class="github-link" href="https://github.com/MrDuckVC/">GitHub <img class="github-ico" src="img/github-ico.svg"></a></p>
+    </footer>
+
+    <script src="js/change_theme.js"></script>
+</body>
+
+</html>
