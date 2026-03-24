@@ -176,7 +176,7 @@ element.addEventListener('click', function(event) {
 <button id="equal">=</button>
 ```
 
-![Фото 1](assets/simple-one.png)
+![Фото 1](../assets/lab2/simple-one.png)
 
 **JS:**
 
@@ -196,8 +196,8 @@ document.getElementById('equal').onclick = function() {
 **Что происходит:**
 Вводим числа в поля, нажимаем "=" — результат появляется в алерте на странице.
 
-![Фото 2](assets/simple-two.png)
-![Фото 3](assets/simple-three.png)
+![Фото 2](../assets/lab2/simple-two.png)
+![Фото 3](../assets/lab2/simple-three.png)
 
 ---
 
@@ -232,7 +232,7 @@ document.getElementById('equal').onclick = function() {
 **Что происходит:**
 После нажатия "=" результат появляется на странице.
 
-![Фото 4](assets/simple-four.png)
+![Фото 4](../assets/lab2/simple-four.png)
 
 ## 3. Программирование кнопок калькулятора
 
@@ -400,7 +400,7 @@ window.onload = function(){
 3. Найдите и установите "Live Server"
 4. После установки нажмите кнопку "Go Live" в нижней панели VS Code
 
-![Фото 1](./assets/live-server.png)
+![Фото 1](../assets/lab2/live-server.png)
 
 Теперь ваш калькулятор будет работать в браузере, и вы сможете видеть все изменения в реальном времени!
 
